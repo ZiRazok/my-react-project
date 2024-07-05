@@ -1,6 +1,6 @@
 export const Mailbox = ({ name, unreadMessages = [] }) => {
     return (
-        <div>
+        <div class="mail-box">
             <p>Hello {name}</p>
             <p>
                 {unreadMessages.length > 0

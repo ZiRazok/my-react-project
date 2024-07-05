@@ -40,3 +40,15 @@
 .read-the-docs {
   color: #888;
 } */
+
+.sss{
+  font-size: 80px;
+}
+
+.mail-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid red;
+}

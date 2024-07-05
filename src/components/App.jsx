@@ -1,12 +1,24 @@
 // src/components/App.jsx
+import './App.css'
 
 import { Product } from "./Product";
 import { Mailbox } from "./Mailbox";
+import { BookList } from "./BookList";
+
+const favouriteBooks = [
+  { id: "id-1", name: "JS for beginners" },
+  { id: "id-2", name: "React basics" },
+  { id: "id-3", name: "React Router overview" }
+];
 
 export default function App() {
   return (
     <div>
       <h1>Best selling</h1>
+
+      <h2 class="sss"> Books of the week</h2>
+      <BookList books={favouriteBooks} />
+      <br/>
 
       <Mailbox
         name="Alan"
