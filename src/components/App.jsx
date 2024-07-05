@@ -1,12 +1,17 @@
 // src/components/App.jsx
 
 import { Product } from "./Product";
+import { Mailbox } from "./Mailbox";
 
 export default function App() {
   return (
     <div>
       <h1>Best selling</h1>
 
+      <Mailbox
+        name="Alan"
+        unreadMessages={["hi", "hello", "My name`s Yaroslav", "And what u`r name?"]}
+      />
       <Product
       />
       <Product
