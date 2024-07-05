@@ -1,10 +1,22 @@
-const Product = () => {
+// src/components/Product.jsx
+
+export const Product = ({
+  name="{Product name placeholder}",
+  imgUrl="https://dummyimage.com/640x480/2a2a2a/ffffff&text=Product+image+placeholder",
+  price="{Product price placeholder}"
+}) => {
   return (
     <div>
-      <h2>Cookies</h2>
-      <p>Price: 999 credits</p>
+      <h2>{name}</h2>
+			<img src={imgUrl} alt={name} width="480" />
+			<p>Price: {price} credits</p>
     </div>
   );
 };
+
+
+
+
+
 
 export default Product;
